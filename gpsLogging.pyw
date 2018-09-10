@@ -7,7 +7,7 @@ gps = serial.Serial('com4',baudrate=9600,timeout=1)
 root = ET.Element("fire")
 doc = ET.SubElement(root,"location")
 
-URL = "http://gis1.hartford.gov:6180/geoevent/rest/receiver/fire-laptop-xml-in"
+URL = "xml rest endpoint"
 
 while True:
     if gps.isOpen() == False:
